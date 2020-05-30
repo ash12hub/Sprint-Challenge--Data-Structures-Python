@@ -15,7 +15,13 @@ duplicates = []  # Return the list of duplicates in this data structure
 # Replace the nested for loops below with your improvements
 for name in names_1:
     if name in names_2:
-        duplicates.append(name)
+        duplicates.append(name)    
+        
+'''
+list_set = set(names_1)
+intersection = list_set.intersection(names_2)
+duplicates = list(intersection)
+'''
 
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
